@@ -1,7 +1,7 @@
 package vista;
 
-import javax.swing.JOptionPane;
 import modelo.Conversor;
+
 
 /**
  *
@@ -153,6 +153,11 @@ public class Principal extends javax.swing.JFrame {
         btn_reiniciar.setFont(new java.awt.Font("Comic Sans MS", 2, 14)); // NOI18N
         btn_reiniciar.setForeground(new java.awt.Color(22, 26, 29));
         btn_reiniciar.setText("Reiniciar");
+        btn_reiniciar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_reiniciarMouseClicked(evt);
+            }
+        });
 
         jl_image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/fondo.jpeg"))); // NOI18N
 
@@ -221,39 +226,6 @@ public class Principal extends javax.swing.JFrame {
 
     private void btn_convetirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_convetirMouseClicked
         this.panel_contenedor_bases.setVisible(true); 
-        Conversor conversor = new Conversor(); 
-        
-        Base2 base2 = new Base2(); 
-        Base3 base3 = new Base3(); 
-        Base4 base4 = new Base4(); 
-        Base5 base5 = new Base5(); 
-        
-        int numero = Integer.parseInt(jtf_number.getText()); 
-        
-        base2.jtf_base2.setText("Si sirve");
-        base2.jtf_base2.setText(conversor.conversor_base(numero, 2));
-        System.out.println(conversor.conversor_base(numero, 2));
-        base2.jtf_base4.setText(String.valueOf(conversor.conversor_base(numero, 4)));
-        System.out.println(conversor.conversor_base(numero, 4));
-        base2.jtf_base8.setText(String.valueOf(conversor.conversor_base(numero, 8)));
-        System.out.println(conversor.conversor_base(numero, 8));
-        base2.jtf_base16.setText(String.valueOf(conversor.conversor_base(numero, 16)));
-        System.out.println(conversor.conversor_base(numero, 16));
-        
-        base3.jtf_base3.setText(String.valueOf(conversor.conversor_base(numero, 3)));
-        base3.jtf_base9.setText(String.valueOf(conversor.conversor_base(numero, 9)));
-        base3.jtf_base27.setText(String.valueOf(conversor.conversor_base(numero, 27)));
-        base3.jtf_base81.setText(String.valueOf(conversor.conversor_base(numero, 81)));
-        
-        base4.jtf_base4.setText(String.valueOf(conversor.conversor_base(numero, 4)));
-        base4.jtf_base16.setText(String.valueOf(conversor.conversor_base(numero, 16)));
-        base4.jtf_base64.setText(String.valueOf(conversor.conversor_base(numero, 64)));
-        //base4.jtf_base256.setText(String.valueOf(conversor.conversor_base(numero, 256)));
-        
-        base5.jtf_base5.setText(String.valueOf(conversor.conversor_base(numero, 5)));
-        base5.jtf_base25.setText(String.valueOf(conversor.conversor_base(numero, 25)));
-        base5.jtf_base125.setText(String.valueOf(conversor.conversor_base(numero, 125)));
-        //base5.jtf_base625.setText(String.valueOf(conversor.conversor_base(numero, 625)));
     }//GEN-LAST:event_btn_convetirMouseClicked
 
     private void jtf_numberKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtf_numberKeyTyped
@@ -269,6 +241,14 @@ public class Principal extends javax.swing.JFrame {
         p1.setSize(690,460);
         p1.setLocation(0,0);
         
+        Conversor conversor = new Conversor(); 
+        int numero = Integer.parseInt(jtf_number.getText()); 
+        
+        p1.jtf_base2.setText(conversor.conversor_base(numero, 2));
+        p1.jtf_base4.setText(conversor.conversor_base(numero, 4));
+        p1.jtf_base8.setText(conversor.conversor_base(numero, 8));
+        p1.jtf_base16.setText(conversor.conversor_base(numero, 16));
+        
         jl_image.removeAll();
         jl_image.add(p1);
         jl_image.revalidate();
@@ -279,6 +259,14 @@ public class Principal extends javax.swing.JFrame {
         Base3 p1 = new Base3();
         p1.setSize(690,460);
         p1.setLocation(0,0);
+        
+        Conversor conversor = new Conversor(); 
+        int numero = Integer.parseInt(jtf_number.getText()); 
+        
+        p1.jtf_base3.setText(conversor.conversor_base(numero, 3)); 
+        p1.jtf_base9.setText(conversor.conversor_base(numero, 9)); 
+        p1.jtf_base27.setText(conversor.conversor_base(numero, 27)); 
+        p1.jtf_base81.setText(conversor.conversor_base(numero, 81));
         
         jl_image.removeAll();
         jl_image.add(p1);
@@ -291,6 +279,14 @@ public class Principal extends javax.swing.JFrame {
         p1.setSize(690,460);
         p1.setLocation(0,0);
         
+        Conversor conversor = new Conversor(); 
+        int numero = Integer.parseInt(jtf_number.getText()); 
+        
+        p1.jtf_base5.setText(conversor.conversor_base(numero, 5));
+        p1.jtf_base25.setText(conversor.conversor_base(numero, 25));
+        p1.jtf_base125.setText(conversor.conversor_base(numero, 125));
+        p1.jtf_base625.setText(conversor.conversor_base(numero, 625));
+        
         jl_image.removeAll();
         jl_image.add(p1);
         jl_image.revalidate();
@@ -302,11 +298,60 @@ public class Principal extends javax.swing.JFrame {
         p1.setSize(690,460);
         p1.setLocation(0,0);
         
+        Conversor conversor = new Conversor(); 
+        int numero = Integer.parseInt(jtf_number.getText()); 
+        
+        p1.jtf_base4.setText(conversor.conversor_base(numero, 5));
+        p1.jtf_base16.setText(conversor.conversor_base(numero, 25));
+        p1.jtf_base64.setText(conversor.conversor_base(numero, 125));
+        p1.jtf_base256.setText(conversor.conversor_base(numero, 625));
+        
         jl_image.removeAll();
         jl_image.add(p1);
         jl_image.revalidate();
         jl_image.repaint();
     }//GEN-LAST:event_lbl_base4MouseClicked
+
+    private void btn_reiniciarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_reiniciarMouseClicked
+        Base2 p2 = new Base2();
+        Base3 p3 = new Base3(); 
+        Base4 p4 = new Base4(); 
+        Base5 p5 = new Base5(); 
+        
+        jtf_number.setText("");
+        this.panel_contenedor_bases.setVisible(false); 
+        
+        p2.jtf_base2.setText("");
+        p2.jtf_base4.setText("");
+        p2.jtf_base8.setText("");
+        p2.jtf_base16.setText("");
+        
+        p3.jtf_base3.setText("");
+        p3.jtf_base9.setText("");
+        p3.jtf_base27.setText("");
+        p3.jtf_base81.setText("");
+        
+        p4.jtf_base4.setText("");
+        p4.jtf_base16.setText("");
+        p4.jtf_base64.setText("");
+        p4.jtf_base256.setText("");
+        
+        p4.jtf_base4.setText("");
+        p4.jtf_base16.setText("");
+        p4.jtf_base64.setText("");
+        p4.jtf_base256.setText("");
+        
+        p5.jtf_base5.setText("");
+        p5.jtf_base25.setText("");
+        p5.jtf_base125.setText("");
+        p5.jtf_base625.setText("");
+        
+        jl_image.removeAll();
+        jl_image.revalidate();
+        jl_image.repaint();
+        
+        
+    }//GEN-LAST:event_btn_reiniciarMouseClicked
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

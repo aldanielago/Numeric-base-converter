@@ -30,10 +30,6 @@ public class Base2 extends javax.swing.JPanel {
         lbl_base8 = new javax.swing.JLabel();
         jtf_base16 = new javax.swing.JTextField();
         lbl_base16 = new javax.swing.JLabel();
-        panel_equivalencias = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        lbl_equivalencias = new javax.swing.JLabel();
-        jtf_equivalencias = new javax.swing.JTextField();
 
         pnl_base2.setBackground(new java.awt.Color(181, 131, 141));
         pnl_base2.setMaximumSize(new java.awt.Dimension(690, 460));
@@ -63,54 +59,12 @@ public class Base2 extends javax.swing.JPanel {
         lbl_base16.setFont(new java.awt.Font("Comic Sans MS", 2, 18)); // NOI18N
         lbl_base16.setText("Base 16: ");
 
-        panel_equivalencias.setBackground(new java.awt.Color(181, 131, 141));
-
-        lbl_equivalencias.setFont(new java.awt.Font("Comic Sans MS", 2, 24)); // NOI18N
-        lbl_equivalencias.setText("Equivalencias");
-
-        jtf_equivalencias.setEditable(false);
-        jtf_equivalencias.setBackground(new java.awt.Color(181, 131, 141));
-        jtf_equivalencias.setFont(new java.awt.Font("Comic Sans MS", 2, 18)); // NOI18N
-        jtf_equivalencias.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtf_equivalenciasActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panel_equivalenciasLayout = new javax.swing.GroupLayout(panel_equivalencias);
-        panel_equivalencias.setLayout(panel_equivalenciasLayout);
-        panel_equivalenciasLayout.setHorizontalGroup(
-            panel_equivalenciasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_equivalenciasLayout.createSequentialGroup()
-                .addGroup(panel_equivalenciasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel_equivalenciasLayout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl_equivalencias))
-                    .addGroup(panel_equivalenciasLayout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jtf_equivalencias, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(19, Short.MAX_VALUE))
-        );
-        panel_equivalenciasLayout.setVerticalGroup(
-            panel_equivalenciasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_equivalenciasLayout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addGroup(panel_equivalenciasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl_equivalencias)
-                    .addComponent(jLabel1))
-                .addGap(18, 18, 18)
-                .addComponent(jtf_equivalencias, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-
         javax.swing.GroupLayout pnl_base2Layout = new javax.swing.GroupLayout(pnl_base2);
         pnl_base2.setLayout(pnl_base2Layout);
         pnl_base2Layout.setHorizontalGroup(
             pnl_base2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_base2Layout.createSequentialGroup()
-                .addGap(45, 45, 45)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_base2Layout.createSequentialGroup()
+                .addContainerGap(207, Short.MAX_VALUE)
                 .addGroup(pnl_base2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lbl_base2)
                     .addComponent(lbl_base4)
@@ -122,33 +76,36 @@ public class Base2 extends javax.swing.JPanel {
                     .addComponent(jtf_base8, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jtf_base2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jtf_base4, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(50, 50, 50)
-                .addComponent(panel_equivalencias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(86, Short.MAX_VALUE))
+                .addGap(192, 192, 192))
         );
         pnl_base2Layout.setVerticalGroup(
             pnl_base2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_base2Layout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addGroup(pnl_base2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(panel_equivalencias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addGroup(pnl_base2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addGroup(pnl_base2Layout.createSequentialGroup()
-                        .addGroup(pnl_base2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lbl_base2)
-                            .addComponent(jtf_base2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(70, 70, 70)
-                        .addGroup(pnl_base2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lbl_base4)
-                            .addComponent(jtf_base4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(70, 70, 70)
-                        .addGroup(pnl_base2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lbl_base8)
-                            .addComponent(jtf_base8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(72, 72, 72)
-                        .addGroup(pnl_base2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lbl_base16)
-                            .addComponent(jtf_base16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(44, Short.MAX_VALUE))
+                        .addGap(6, 6, 6)
+                        .addComponent(lbl_base2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jtf_base2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(70, 70, 70)
+                .addGroup(pnl_base2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(pnl_base2Layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(lbl_base4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jtf_base4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(70, 70, 70)
+                .addGroup(pnl_base2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(pnl_base2Layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(lbl_base8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jtf_base8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(72, 72, 72)
+                .addGroup(pnl_base2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(pnl_base2Layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(lbl_base16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jtf_base16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(70, 70, 70))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -163,24 +120,16 @@ public class Base2 extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jtf_equivalenciasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtf_equivalenciasActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jtf_equivalenciasActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     public javax.swing.JTextField jtf_base16;
     public javax.swing.JTextField jtf_base2;
     public javax.swing.JTextField jtf_base4;
     public javax.swing.JTextField jtf_base8;
-    private javax.swing.JTextField jtf_equivalencias;
     private javax.swing.JLabel lbl_base16;
     private javax.swing.JLabel lbl_base2;
     private javax.swing.JLabel lbl_base4;
     private javax.swing.JLabel lbl_base8;
-    private javax.swing.JLabel lbl_equivalencias;
-    private javax.swing.JPanel panel_equivalencias;
     private javax.swing.JPanel pnl_base2;
     // End of variables declaration//GEN-END:variables
 }
