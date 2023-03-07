@@ -1,18 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
- */
 package vista;
 
-/**
- *
- * @author danib
- */
+import java.awt.Font;
+
 public class Base5 extends javax.swing.JPanel {
 
-    /**
-     * Creates new form Base5
-     */
+    public Font font = new Font("Calibri Unicode MS", Font.ITALIC, 18);
+
     public Base5() {
         initComponents();
     }
@@ -31,10 +24,10 @@ public class Base5 extends javax.swing.JPanel {
         lbl_base25 = new javax.swing.JLabel();
         lbl_base125 = new javax.swing.JLabel();
         lbl_base625 = new javax.swing.JLabel();
-        jtf_base625 = new javax.swing.JTextField();
-        jtf_base125 = new javax.swing.JTextField();
-        jtf_base25 = new javax.swing.JTextField();
-        jtf_base5 = new javax.swing.JTextField();
+        jtf_base625 = new javax.swing.JLabel();
+        jtf_base5 = new javax.swing.JLabel();
+        jtf_base25 = new javax.swing.JLabel();
+        jtf_base125 = new javax.swing.JLabel();
 
         pnl_base5.setBackground(new java.awt.Color(181, 131, 141));
         pnl_base5.setMaximumSize(new java.awt.Dimension(690, 460));
@@ -53,16 +46,20 @@ public class Base5 extends javax.swing.JPanel {
         lbl_base625.setText("Base 625: ");
 
         jtf_base625.setBackground(new java.awt.Color(229, 152, 155));
-        jtf_base625.setFont(new java.awt.Font("Comic Sans MS", 2, 18)); // NOI18N
-
-        jtf_base125.setBackground(new java.awt.Color(229, 152, 155));
-        jtf_base125.setFont(new java.awt.Font("Comic Sans MS", 2, 18)); // NOI18N
-
-        jtf_base25.setBackground(new java.awt.Color(229, 152, 155));
-        jtf_base25.setFont(new java.awt.Font("Comic Sans MS", 2, 18)); // NOI18N
+        jtf_base625.setFont(font);
+        jtf_base625.setOpaque(true);
 
         jtf_base5.setBackground(new java.awt.Color(229, 152, 155));
-        jtf_base5.setFont(new java.awt.Font("Comic Sans MS", 2, 18)); // NOI18N
+        jtf_base5.setFont(font);
+        jtf_base5.setOpaque(true);
+
+        jtf_base25.setBackground(new java.awt.Color(229, 152, 155));
+        jtf_base25.setFont(font);
+        jtf_base25.setOpaque(true);
+
+        jtf_base125.setBackground(new java.awt.Color(229, 152, 155));
+        jtf_base125.setFont(font);
+        jtf_base125.setOpaque(true);
 
         javax.swing.GroupLayout pnl_base5Layout = new javax.swing.GroupLayout(pnl_base5);
         pnl_base5.setLayout(pnl_base5Layout);
@@ -70,47 +67,39 @@ public class Base5 extends javax.swing.JPanel {
             pnl_base5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_base5Layout.createSequentialGroup()
                 .addGap(197, 197, 197)
-                .addGroup(pnl_base5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addGroup(pnl_base5Layout.createSequentialGroup()
-                        .addComponent(lbl_base625, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(46, 46, 46)
-                        .addComponent(jtf_base625, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE))
-                    .addGroup(pnl_base5Layout.createSequentialGroup()
-                        .addComponent(lbl_base125, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(49, 49, 49)
-                        .addComponent(jtf_base125, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE))
-                    .addGroup(pnl_base5Layout.createSequentialGroup()
-                        .addComponent(lbl_base25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(57, 57, 57)
-                        .addComponent(jtf_base25, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE))
-                    .addGroup(pnl_base5Layout.createSequentialGroup()
-                        .addComponent(lbl_base5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(68, 68, 68)
-                        .addComponent(jtf_base5, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)))
-                .addGap(160, 160, 160))
+                .addGroup(pnl_base5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lbl_base5)
+                    .addComponent(lbl_base25)
+                    .addComponent(lbl_base625)
+                    .addComponent(lbl_base125, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(18, 18, 18)
+                .addGroup(pnl_base5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jtf_base5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jtf_base25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jtf_base125, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
+                    .addComponent(jtf_base625, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE))
+                .addGap(201, 201, 201))
         );
         pnl_base5Layout.setVerticalGroup(
             pnl_base5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnl_base5Layout.createSequentialGroup()
-                .addGap(52, 52, 52)
+                .addGap(102, 102, 102)
                 .addGroup(pnl_base5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addGroup(pnl_base5Layout.createSequentialGroup()
-                        .addComponent(lbl_base5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(76, 76, 76)
-                        .addComponent(lbl_base25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(76, 76, 76)
-                        .addComponent(lbl_base125, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(76, 76, 76)
-                        .addComponent(lbl_base625, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(pnl_base5Layout.createSequentialGroup()
-                        .addComponent(jtf_base5)
-                        .addGap(70, 70, 70)
-                        .addComponent(jtf_base25)
-                        .addGap(70, 70, 70)
-                        .addComponent(jtf_base125)
-                        .addGap(70, 70, 70)
-                        .addComponent(jtf_base625)))
-                .addGap(70, 70, 70))
+                    .addComponent(lbl_base5)
+                    .addComponent(jtf_base5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(38, 38, 38)
+                .addGroup(pnl_base5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(lbl_base25)
+                    .addComponent(jtf_base25, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addGroup(pnl_base5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jtf_base125, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbl_base125))
+                .addGap(37, 37, 37)
+                .addGroup(pnl_base5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(lbl_base625, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jtf_base625, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(116, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -127,10 +116,10 @@ public class Base5 extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JTextField jtf_base125;
-    public javax.swing.JTextField jtf_base25;
-    public javax.swing.JTextField jtf_base5;
-    public javax.swing.JTextField jtf_base625;
+    public javax.swing.JLabel jtf_base125;
+    public javax.swing.JLabel jtf_base25;
+    public javax.swing.JLabel jtf_base5;
+    public javax.swing.JLabel jtf_base625;
     private javax.swing.JLabel lbl_base125;
     private javax.swing.JLabel lbl_base25;
     private javax.swing.JLabel lbl_base5;
