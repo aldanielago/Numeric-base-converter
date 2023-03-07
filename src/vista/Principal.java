@@ -2,11 +2,6 @@ package vista;
 
 import modelo.Conversor;
 
-
-/**
- *
- * @author aldanielago
- */
 public class Principal extends javax.swing.JFrame {
 
     public Principal() {
